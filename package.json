@@ -1,0 +1,23 @@
+{
+  "name": "secretfracture",
+  "version": "1.0.6",
+  "description": "A simple utility for breaking an ASCII string into cryptographic shares using Shamir's secret sharing.",
+  "main": "src/bundle.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.4.2"
+  },
+  "scripts": {
+    "test": "jest recover.test.js"
+  },
+  "keywords": [
+    "cryptography",
+    "secret-sharing",
+    "information-theoretic security"
+  ],
+  "author": "radgav",
+  "license": "ISC"
+}
