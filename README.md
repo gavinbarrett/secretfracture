@@ -2,12 +2,12 @@
 This is a threshold secret sharing scheme.
 
 # Installing and Importing
-##Install
+## Install
 Install the package in your dependencies by running:
 ```bash
 npm i secretfracture --save
 ```
-##Import
+## Import
 Import the core functions into your file by typing:
 ```javascript
 const {share, recover} = require('secretfracture');
