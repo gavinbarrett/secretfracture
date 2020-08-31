@@ -1,5 +1,5 @@
 # Description
-SecretFracture is a threshold secret sharing scheme. This is a cryptographic protocol that will split an ASCII plaintext message into a set of *n* shares that can be recovered by providing an arbitrary set of *k* shares. This technique was invented by Isaeli cryptographer Adi Shamir; you may read more about this simple and elegant system in his seminal paper ![How to Share a Secret](https://cs.jhu.edu/~sdoshi/crypto/papers/shamirturing.pdf).
+SecretFracture is a threshold secret sharing scheme. This is a cryptographic protocol that will split an ASCII plaintext message into a set of *n* shares that can be recovered by providing an arbitrary set of *k* shares. This technique was invented by Isaeli cryptographer Adi Shamir; you may read more about this simple and elegant system in his seminal paper [How to Share a Secret](https://cs.jhu.edu/~sdoshi/crypto/papers/shamirturing.pdf).
 
 ![](https://github.com/gavinbarrett/secretfracture/workflows/Recovery%20Test/badge.svg)
 
