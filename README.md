@@ -1,6 +1,8 @@
 # Description
 This is a threshold secret sharing scheme.
 
+![](https://github.com/gavinbarrett/secretfracture/.github/workflows/ci.yml/badge.svg)
+
 # Installing and Importing
 ## Install
 Install the package in your dependencies by running:
