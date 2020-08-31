@@ -1,7 +1,7 @@
 # Description
 This is a threshold secret sharing scheme.
 
-![](https://github.com/gavinbarrett/secretfracture/.github/workflows/ci.yml/badge.svg)
+![](https://github.com/gavinbarrett/secretfracture/workflows/CI/badge.svg)
 
 # Installing and Importing
 ## Install
