@@ -1,7 +1,10 @@
 # Description
-This is a threshold secret sharing scheme.
+SecretFracture is a threshold secret sharing scheme. This is a cryptographic protocol that will split an ASCII plaintext message into a set of *n* shares that can be recovered by providing an arbitrary set of *k* shares. This technique was invented by Isaeli cryptographer Adi Shamir; you may read more about this simple and elegant system in his seminal paper ![How to Share a Secret](https://cs.jhu.edu/~sdoshi/crypto/papers/shamirturing.pdf).
 
 ![](https://github.com/gavinbarrett/secretfracture/workflows/Recovery%20Test/badge.svg)
+
+# WARNING: This project should not be used in production.
+## I have only minimal experience in writing cryptographic code and this package is yet to be reviewed by cryptanalysts and security researchers.
 
 # Installing and Importing
 ## Install
@@ -16,6 +19,9 @@ const {share, recover} = require('secretfracture');
 ```
 
 # Usage:
+Again, __DON'T__.
+At least not for anything that could potentially be compromised.
+
 ## Example of a 3/5 sharing scheme
 ```javascript
 const {share, recover} = require('secretfracture');
