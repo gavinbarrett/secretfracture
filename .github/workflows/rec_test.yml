@@ -1,4 +1,4 @@
-name: CI
+name: Recovery Test
 
 on: 
   push:
