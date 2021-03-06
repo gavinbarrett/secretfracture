@@ -49,5 +49,8 @@ The output will be something similar to:
 th15_15_@_53cr37
 ```
 
+## Use Cases
+Thresholded secret sharing schemes have a wide variety of applications, particularly in distributed systems. The jist of the scheme is to provide multiparty encryption with a particular threshold of recovery. This scheme can be adapted to meet varying levels of security needs.
+
 ## Encoding system
 Secret Fracture works by splitting every byte of the ascii plaintext into its own set of shares. The hexadecimal you see output as shares is slightly different from regular hexadecimal. Normally, we can only store bytes with values ranging from 0-255. Since each byte in our secret sharing scheme occurs within a finite field of size 257, we have two values that cannot be represented in hexadecimal. Subsequently, I devised a small convention in which the values 256 and 257 are represented by the pseudo-hex bytes za and zb, respectively. Aside from these two values, the rest of the output shares are interpretable as standard hexadecimal.

@@ -1,4 +1,4 @@
-const Crypto = require('crypto');
+const crypto = require('crypto');
 const mod = require('./number').mod;
 const return_hex = require('./number').return_hex;
 
@@ -38,24 +38,25 @@ const split_secret = (n, k, field, coeffs, secret) => {
 const horners = (x, k, field, poly, secret) => {
 	/* evaluate polynomial with horner's method */
 	let result = poly[0];
-	for(let i = 1; i < k; i++)
+	for (let i = 1; i < k; i++)
 		result = mod(mod(result * x, field) + poly[i], field);
 	return result;
 }
 
 const mod_field = (number) => {
+	/* keep the number within our field */
 	return number % 257;
 }
 
 const gen_coeff = (k, field) => {
 	/* generate cryptographically secure coefficients */
-	return Array.from(Crypto.randomBytes(k-1));
+	return [...crypto.randomBytes(k-1)];
 }
 
 const share = (n, k, plaintext) => {
 	/* return shares for the plaintext */
 	if (k > n) {
-		console.log('threshold too large');
+		console.error('Your threshold is too large.');
 		return;
 	}
 	let s = [""];
@@ -72,7 +73,7 @@ const share = (n, k, plaintext) => {
 			s[j] += return_hex(share);
 		}
 	}
-	const num_shares = Array.from(Array(n), (_, index) => index + 1); 
+	const num_shares = [...Array(n), (_, index) => index + 1]; 
 	return [num_shares, s];
 }
 
