@@ -37,7 +37,7 @@ const process_shares = (a) => {
 	// this function's parameter ys is an array of hex strings
     let c = [];
     for (let i = 0; i < a.length; i++) {
-        let x = a[i].match(/.{1,2}/g);
+        let x = a[i].match(/.{1,2}/g) || [];
         for (let j = 0; j < x.length; j++) {
             if (c[j] == undefined)
             	c[j] = [];
